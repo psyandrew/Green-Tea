@@ -1,0 +1,48 @@
+.greenbutton-ctg{
+  background-color: hsl(0 0% 18%);
+  font-size: 2rem;
+  border-radius: 100px;
+  padding: 0 30px 0 30px;
+}
+
+.return{
+  align-self: center;
+}
+
+.go{
+  color: yellow;
+}
+
+.lock{
+  color: indianred;
+}
+
+.greenbutton-ctg i:hover {
+  transition: transform 0.3s ease, color 0.3s ease;
+  transform: scale(1.15);
+}
+ 
+
+.greenbutton-checkout{
+  padding: 8px 0 8px 0 ;
+  width: 120px;
+  display: flex; 
+  color: hsl(61 100% 40%);
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  border: 1px solid hsl(61 100% 40%);;
+  border-radius: 10px;
+  background-color: hsla(112, 33%, 20.1%);
+  margin: 0 0% 0% 0%;
+}
+
+.greenbutton-checkout:hover {
+  transition: transform 0.3s ease, color 0.3s ease
+}
+ 
+.greenbutton-checkout:hover {
+  color: hsl(61 100% 70%);
+  transform: scale(1.1);
+}
+ 

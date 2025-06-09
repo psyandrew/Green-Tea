@@ -1,0 +1,65 @@
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+/* Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+/* Merriweather */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+/* Fonts - start */
+
+/* Montserrat */
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+.font-montserrat-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+/* Playfair Display */
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400; /* Regular */
+}
+
+
+.font-playfair-bold {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500; 
+}
+
+
+/* Roboto */
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200; 
+}
+
+.fr {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900; 
+}
+
+
+/* Merriweather */
+.font-merriweather {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; 
+}
+
+
+/*Font colors*/
+.goldfont{
+    color: hsla(49, 100%, 66%, 1);
+}
+
+.whitefont {
+    color: hsla(112, 0%, 100%, 1);
+}

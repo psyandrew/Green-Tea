@@ -1,0 +1,35 @@
+.bouncing-dots {
+  display: flex;
+  gap: 5px;
+
+}
+
+.dot {
+  width: 3px;
+  height: 3px;
+  background-color: white;
+  border-radius: 50%;
+  animation: bounce 1s infinite;
+  transform: translateY(16px);
+}
+
+.dot2 {
+  animation-delay: 0.1s;
+}
+
+.dot3 {
+  animation-delay: 0.2s;
+}
+
+.dot4 {
+  animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(16px);
+  }
+  50% {
+    transform: translateY(9px);
+  }
+}

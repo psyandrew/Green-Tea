@@ -1,0 +1,35 @@
+# Node modules folder (huge, should not be committed)
+node_modules/
+
+# Build outputs
+build/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv environment variables file
+.env
+
+# Mac OS system files
+.DS_Store
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Django stuff
+*.sqlite3
+*.log
+media/
+
+# VSCode settings (optional)
+.vscode/
+
+# OS files
+Thumbs.db
+
+# Other editors
+*.swp

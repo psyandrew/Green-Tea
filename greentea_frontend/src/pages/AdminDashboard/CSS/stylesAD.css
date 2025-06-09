@@ -1,0 +1,525 @@
+body {
+  margin:0;
+  color: white;
+  min-width: 500px;
+  height: 100%;
+
+}
+
+p, h6 {
+  margin: 0px 0px;
+}
+
+.dashboardbg {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background-color: hsl(0 0% 18%);
+}
+
+.dashboardbg {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background-color: hsl(0 0% 18%);
+}
+
+@media (max-width: 450px) {
+  .dashboardbg {
+    min-height: 200vh;
+  }
+}
+.sidebar-container {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0 0% 18%);
+}
+
+.leaf{
+  font-size: 100px;
+  color: green;
+}
+
+.leaf-min{
+  font-size: 50px;
+  color: green;
+}
+
+
+.sidebar-container-minimized {
+  background-color: hsl(0 0% 18%);
+  width: 80px;
+  height: 62px;
+}
+
+.sidebar-head-minimized{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-head{
+  padding: 20px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-head-minimized{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar-content-container{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-tabs-header {
+  border-top: 4px solid hsl(0 0% 28%);
+  border-bottom: 4px solid hsl(0 0% 28%);
+  margin: 40px 0 0 0;
+  padding: 5px 0 5px 20px;
+}
+
+.sidebar-tabs {
+  cursor: pointer;
+  padding: 2.5px 0 2.5px 40px;
+  border-bottom: 1px solid hsl(0 0% 28%);
+}
+.sidebar-tabs:hover {
+  background-color: hsl(0 0% 30%);
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  width: 100%;
+  min-height: 100%;
+}
+
+.auth-modal {
+  color: hsl(51 100% 35%);
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0 0% 18%);
+  border: 1px solid #888;
+  min-height: 500px;
+  width: 300px;
+  min-width: 200px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+  border-radius: 15px;
+}
+
+.dashboard-input {
+  border-radius: 12px;
+  min-width: 280px;
+  height: 30px;
+  margin: 5px 0;
+}
+
+.auth-modal-form {
+  padding-top:10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+
+
+@media(max-width: 576px) {
+  .auth-modal {
+    height: 100vh;
+    width: 100%;
+    min-height: 250px;
+    min-width: 250px;
+    border-radius: 0px;
+  }
+
+  
+
+  .dashboard-input {
+    min-width: 250px;
+    height: 30px;
+    margin: 5px 0;
+  }
+ }
+
+ .content-page-container{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  border-left: 1px solid #888;
+ }
+
+.content-page-header{
+  background-color: hsl(0 0% 18%);
+  width: 100%;
+  border-bottom: 1px solid #888;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 0 10px 30px;
+}
+
+.catalogue-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.product-card {
+  background-color: hsl(0 0% 18%);
+  border: 2px solid #888;
+  flex: 1 1 25%; /* Default to 4 columns */
+  max-width: 600px;
+  min-width: 300px;
+  height: 250px;
+}
+
+@media (max-width: 1800px) { /* 2-column layout */
+  .product-card {
+    flex: 1 1 50%;
+  }
+}
+
+@media (max-width: 900px) { /* 1-column layout */
+  .product-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.product-card-container{
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.product-card-logo-container{
+  height: 100%;
+  flex: 0.25;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.product-card-logo{
+  border: white 1px solid;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product-card-id-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card-interface-container{
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.product-card-interface-container-row-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.product-card-interface-container-row-1 > p{
+  width: 80px;
+}
+
+.product-card-interface-container-row-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.product-card-interface-container-row-2 > p{
+  width: 80px;
+}
+
+.product-card-interface-container-row-2 > h6{
+  width: 80px;
+  text-align: center;
+}
+
+.product-card-input {
+  width: 80px;
+}
+
+.temp-modal-container {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  width: 100%;
+  min-height: 100%;
+} 
+
+.orders-container, .tickets-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 250px;
+  height: 100%;
+  min-height: 100vh;
+  gap: 40px;
+  overflow: visible;
+  background-color: hsl(0 0% 18%);
+}
+
+.orders-card, .tickets-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative; 
+  width: 100%;
+  max-width: 750px; 
+  border-radius: 30px;
+  border: hsl(0 0% 30%) 6px solid;
+  background-color: hsl(0 0% 30%);
+  color: white;
+  overflow: hidden; 
+}
+
+.orders-card{
+  height: 450px;
+} 
+.tickets-card{
+  height: 650px;
+}
+
+.orders-card-id, .tickets-card-id{
+  width: 100%;
+  display: flex;
+  height: 40px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  line-height: 0;
+  color: white;
+}
+
+.orders-card-details, .tickets-card-details{
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-top: hsl(0 0% 30%) 3px solid;
+  border-top-left-radius:30px;
+  border-top-right-radius: 30px;
+  background-color: hsl(0 0% 18%);
+}
+
+.orders-card-customer-details, .tickets-card-customer-details{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  text-align: left;
+}
+
+.orders-card-process-details, .tickets-card-process-details{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+  align-items: center;
+  text-align: left;
+  justify-content: space-evenly;
+}
+
+.orders-card-process-details>span, .tickets-card-process-details>span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.order-card-process-highlight, .tickets-card-process-highlight {
+  width: 130px;
+  background-color: hsl(98, 55%, 55%);
+  padding: 10px 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.order-card-load, .tickets-card-load{
+  
+  background-color: hsl(0 0% 10%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-y: auto;
+  gap: 10px;
+}
+
+.order-card-load{
+  height: 95%;
+  width: 95%;
+}
+
+.tickets-card-load{
+   border-top: white 1px solid;
+  height: 50%;
+  width: 95%;
+
+}
+.admin-load{
+  margin: 10px;
+}
+
+.order-card-load, .admin-load{
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+
+.order-card-load>div {
+  margin: 10px 0 0 0
+}
+
+.tickets-card-load>h6, .tickets-card-load>div, .tickets-card-load>textarea{
+  padding: 10px 0 0 10px
+}
+.order-card-summary, .tickets-card-summary, .tickets-card-summary-admin{
+  width: 100%;
+  display: flex;
+}
+
+.order-card-summary{
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+} 
+
+.tickets-card-summary{
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.tickets-card-summary-admin{
+  flex-direction: row;
+  align-items: center;
+  justify-content: f;
+}
+.order-card-breakdown{
+  width: 100%;
+  margin: 0px 0 0 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+
+.admin-logs{
+  padding: 5px 0 0 0;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.customer-concerns{
+  justify-content: flex-start;
+  height: 35%;
+  padding: 0 0 20px 0;
+}
+
+.tickets-card-load>textarea{
+  background-color: hsl(0 0% 10%);
+  padding: 20px 0 20px 10px;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.database-container{
+  width: 100%;  
+  overflow-x: auto;  
+  min-width: 75%;
+  height: 100%;
+
+}
+
+
+.database-table {
+  gap:20px;
+  width: 100%;  
+  min-width: 75%;;  
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.cart-container{
+  padding: 20px 10px;
+  background-color: black;
+  width: 100%;
+  border: white 1px solid;
+  border-radius: 20px;
+}
+
+.cart-table{
+  width: 100%;
+}
+
+.cell-center{
+  text-align: center;
+}
+
+.customer-card-container {
+  padding-top: 30px;
+  margin-top: 10px;
+}
+
+.cart-container {
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: black;
+}
