@@ -16,7 +16,6 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 COPY . /app/
 
 # Run app with gunicorn
-CMD ["gunicorn",  "gtbackend.wsgi:application", "--bind", "0.0.0.0:8000"]
-
+CMD ["gunicorn", "gtbackend.wsgi:application", "--bind", "0.0.0.0:8000"]
 
 RUN pip install --upgrade pip && pip install -r requirements.txt && pip list
