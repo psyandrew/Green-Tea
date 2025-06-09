@@ -85,7 +85,7 @@ MIDDLEWARE = [
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
-ROOT_URLCONF = 'gtbackend.urls'
+ROOT_URLCONF = 'djangobackend.urls'
 
 TEMPLATES = [
     {
@@ -103,7 +103,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'gtbackend.wsgi.application'
+WSGI_APPLICATION = 'djangobackend.wsgi.application'
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
