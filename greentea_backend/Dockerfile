@@ -10,12 +10,11 @@ WORKDIR /app
 
 # Install dependencies
 COPY requirements.txt /app/
-RUN pip install --upgrade pip && pip install -r requirements.txt
+RUN pip install --upgrade pip && pip install -r requirements.txt && pip list
 
 # Copy project files
 COPY . /app/
 
-# Run app with gunicorn
-CMD ["gunicorn", "gtbackend.wsgi:application", "--bind", "0.0.0.0:8000"]
+# Run app with gunicorn (gtbackend must match your Django project folder)
+CMD ["gunicorn", "djangobackend.wsgi:application", "--bind", "0.0.0.0:8000"]
 
-RUN pip install --upgrade pip && pip install -r requirements.txt && pip list
