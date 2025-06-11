@@ -45,7 +45,7 @@ export const useInventoryRequests = () => {
 
       try { 
 
-        const response = await fetch('https://green-tea-production.up.railway.app/products/all')
+        const response = await fetch('https://green-tea-production.up.railway.app/products/all');
         const data = await response.json();
         setInventoryData(data.products);
 
