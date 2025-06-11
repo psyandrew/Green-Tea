@@ -7,8 +7,8 @@ export const useCSMRequests = () => {
   const fetchData = async() => {
     try {
       const [ticketsResponse, customersResponse] = await Promise.all([
-        fetch('http://127.0.0.1:8000/admin/tickets/all'),
-        fetch('http://127.0.0.1:8000/admin/user/all')
+        fetch('https://green-tea-production.up.railway.app/admin/tickets/all'),
+        fetch('https://green-tea-production.up.railway.app/admin/user/all')
         //
       ]);
 
@@ -31,8 +31,8 @@ export const useCSMRequests = () => {
   const updateTicketsRequest = async ( ticketID, type, data ) => {
     
     const fetchMap ={
-      status:'http://127.0.0.1:8000/admin/tickets/update/status',
-      admin_notes:'http://127.0.0.1:8000/admin/tickets/update/notes'
+      status:'https://green-tea-production.up.railway.app/admin/tickets/update/status',
+      admin_notes:'https://green-tea-production.up.railway.app/admin/tickets/update/notes'
     }
 
 

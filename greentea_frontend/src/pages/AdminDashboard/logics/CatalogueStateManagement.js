@@ -71,15 +71,15 @@ export const useInventoryRequests = () => {
     
     const requestMap = {
       "inventory": {
-        "fetchString":'http://127.0.0.1:8000/admin/products/update/stock',
+        "fetchString":'https://green-tea-production.up.railway.app/admin/products/update/stock',
         "requestKey": 'inventory_stock'
       },
       "price": {
-        "fetchString":'http://127.0.0.1:8000/admin/products/update/price',
+        "fetchString":'https://green-tea-production.up.railway.app/admin/products/update/price',
         "requestKey": 'price'
       },
       "on_sale": {
-        "fetchString":'http://127.0.0.1:8000/admin/products/update/status',
+        "fetchString":'https://green-tea-production.up.railway.app/admin/products/update/status',
         "requestKey": 'on_sale'
       }
     }
