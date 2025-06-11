@@ -73,7 +73,7 @@ export default function AdminDashboard() {
     if (result) {
       setShowSuccessModal(true);
       setTimeout(() => setShowSuccessModal(false), 1000)
-      setTimeout(() => setLogged(false), false);
+      setTimeout(() => updateLogged(false), false);
     }
 
     if (result === 'err') {

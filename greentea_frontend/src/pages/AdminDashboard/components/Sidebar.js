@@ -12,7 +12,7 @@ export default function Sidebar({logged, updateContentPage, logoutSubmit }) {
       <div className='sidebar-head'>
         <i  className="fas fa-leaf leaf" onClick={() => setMinimize(true)}></i>
       </div>
-      {logged ? (<SidebarLogged updateContentPage={updateContentPage}/>) : null}
+      {logged ? (<SidebarLogged updateContentPage={updateContentPage} logoutSubmit={logoutSubmit}/>) : null}
     </div> 
   :
     <div className='sidebar-container-minimized'>  
@@ -27,7 +27,7 @@ export default function Sidebar({logged, updateContentPage, logoutSubmit }) {
 }
 
 
-function SidebarLogged({updateContentPage}) {
+function SidebarLogged({updateContentPage, logoutSubmit={logoutSubmit}}) {
 
   return(
     <div className='sidebar-content-container'>
