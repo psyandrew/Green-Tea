@@ -1,6 +1,6 @@
 export const customerLoginRequest = async (username, password) => {
     try {
-      const response = await fetch('https://green-tea-production.up.railway.app/login', {
+      const response = await fetch('https://green-tea.onrender.com/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password })
@@ -23,7 +23,7 @@ export const customerLoginRequest = async (username, password) => {
 
 export const customerSignupRequest = async (username, email, password, contact_number) => {
   try {
-      const response = await fetch('https://green-tea-production.up.railway.app/register', {
+      const response = await fetch('https://green-tea.onrender.com/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -50,7 +50,7 @@ export const customerCheckAuth = async () => {
     }
 
     try {
-        const response = await fetch('https://green-tea-production.up.railway.app/check-auth', {
+        const response = await fetch('https://green-tea.onrender.com/check-auth', {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${token}`,
@@ -72,7 +72,7 @@ export const customerCheckAuth = async () => {
 export const fetchCustomerData = async (customer_id) => {
 
     try {
-        const response = await fetch('https://green-tea-production.up.railway.app/profile', {
+        const response = await fetch('https://green-tea.onrender.com/profile', {
             method: 'GET',
             headers:  {
             "Content-Type": "application/json",
@@ -95,7 +95,7 @@ export const customerLogoutRequest = async () => {
   const token = localStorage.getItem('cs_authToken');
 
   try {
-    const response = await fetch('https://green-tea-production.up.railway.app/logout', {
+    const response = await fetch('https://green-tea.onrender.com/logout', {
       method: 'POST',
       headers: {
         "Content-Type": "application/json",
