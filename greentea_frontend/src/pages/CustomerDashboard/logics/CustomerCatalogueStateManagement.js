@@ -45,7 +45,7 @@ export const useInventoryRequests = () => {
 
       try { 
 
-        const response = await fetch('https://green-tea-production.up.railway.app/products/all');
+        const response = await fetch('https://green-tea.onrender.com/products/all');
         const data = await response.json();
         setInventoryData(data.products);
 
@@ -71,15 +71,15 @@ export const useInventoryRequests = () => {
     
     const requestMap = {
       "inventory": {
-        "fetchString":'https://green-tea-production.up.railway.app/admin/products/update/stock',
+        "fetchString":'https://green-tea.onrender.com/admin/products/update/stock',
         "requestKey": 'inventory_stock'
       },
       "price": {
-        "fetchString":'https://green-tea-production.up.railway.app/admin/products/update/price',
+        "fetchString":'https://green-tea.onrender.com/admin/products/update/price',
         "requestKey": 'price'
       },
       "on_sale": {
-        "fetchString":'https://green-tea-production.up.railway.app/admin/products/update/status',
+        "fetchString":'https://green-tea.onrender.com/admin/products/update/status',
         "requestKey": 'on_sale'
       }
     }

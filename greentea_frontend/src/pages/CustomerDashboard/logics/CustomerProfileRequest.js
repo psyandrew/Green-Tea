@@ -1,6 +1,6 @@
 export const sendTicketConcern = async (data) => {
     try {
-      const response = await fetch('https://green-tea-production.up.railway.app/ticket/create', {
+      const response = await fetch('https://green-tea.onrender.com/ticket/create', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ data })
@@ -21,7 +21,7 @@ export const sendTicketConcern = async (data) => {
   
 export const ticketHistoryRequest = async (ID) => {
     try {
-      const response = await fetch('https://green-tea-production.up.railway.app/ticket/history', {
+      const response = await fetch('https://green-tea.onrender.com/ticket/history', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 'id': ID })
@@ -40,7 +40,7 @@ export const ticketHistoryRequest = async (ID) => {
 
 export const cancelTicketRequest = async (ticket_id) => {
     try {
-      const response = await fetch('https://green-tea-production.up.railway.app/ticket/cancel', {
+      const response = await fetch('https://green-tea.onrender.com/ticket/cancel', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ticket_id })

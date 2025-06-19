@@ -1,7 +1,7 @@
 export const createCustomerTicket = async (data) => {
 
     try {
-      const response = await fetch('https://green-tea-production.up.railway.app/ticket/create', {
+      const response = await fetch('https://green-tea.onrender.com/ticket/create', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

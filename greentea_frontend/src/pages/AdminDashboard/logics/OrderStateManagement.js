@@ -5,7 +5,7 @@ export const useOrderRequests = () => {
 
   const fetchOrders = async() => {
       try {
-        const response = await fetch( 'https://green-tea-production.up.railway.app/admin/orders/all')
+        const response = await fetch( 'https://green-tea.onrender.com/admin/orders/all')
         const data = await response.json();
         setOrdersData(data);
       } catch(error) {
@@ -22,7 +22,7 @@ export const useOrderRequests = () => {
     
     try {
       const request = await fetch( 
-        'https://green-tea-production.up.railway.app/admin/orders/update/status',
+        'https://green-tea.onrender.com/admin/orders/update/status',
         {
           method: "PATCH",
           headers:  {

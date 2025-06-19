@@ -1,6 +1,6 @@
 export const customerAddCart = async ({items, customer_id} ) => {
     try {
-      const response = await fetch('https://green-tea-production.up.railway.app/cart/add-to-cart', {
+      const response = await fetch('https://green-tea.onrender.com/cart/add-to-cart', {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -24,7 +24,7 @@ export const customerAddCart = async ({items, customer_id} ) => {
 
 export const customerGetCart = async ( customer_id) => {
     try {
-      const response = await fetch('https://green-tea-production.up.railway.app/cart/', {
+      const response = await fetch('https://green-tea.onrender.com/cart/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -48,7 +48,7 @@ export const customerGetCart = async ( customer_id) => {
 export const createOrderFetch = async ({customer_id, payment_method}) => {
     console.log(customer_id, payment_method)
     try {
-      const response = await fetch('https://green-tea-production.up.railway.app/order/create', {
+      const response = await fetch('https://green-tea.onrender.com/order/create', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
@@ -73,7 +73,7 @@ export const createOrderFetch = async ({customer_id, payment_method}) => {
 export const emptyCartRequest = async ({customer_id}) => {
     console.log(customer_id)
     try {
-      const response = await fetch('https://green-tea-production.up.railway.app/cart/empty', {
+      const response = await fetch('https://green-tea.onrender.com/cart/empty', {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
