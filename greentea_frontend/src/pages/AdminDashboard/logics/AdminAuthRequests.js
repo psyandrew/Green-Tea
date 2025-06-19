@@ -1,6 +1,6 @@
 export const adminLoginRequest = async (username, password) => {
     try {
-        const response = await fetch('https://green-tea-production.up.railway.app/admin/login', {
+        const response = await fetch('https://green-tea.onrender.com/admin/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ username, password })
@@ -30,7 +30,7 @@ export const adminCheckAuth = async () => {
     }
 
     try {
-        const response = await fetch('https://green-tea-production.up.railway.app/admin/check-auth', {
+        const response = await fetch('https://green-tea.onrender.com/admin/check-auth', {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${token}`,
@@ -51,7 +51,7 @@ export const adminCheckAuth = async () => {
 
 export const adminSignupRequest = async (username, email, password) => {
   try {
-      const response = await fetch('https://green-tea-production.up.railway.app/admin/register', {
+      const response = await fetch('https://green-tea.onrender.com/admin/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -73,7 +73,7 @@ export const adminLogoutRequest = async () => {
   const token = localStorage.getItem('authToken');
 
   try {
-    const response = await fetch('https://green-tea-production.up.railway.app/admin/logout', {
+    const response = await fetch('https://green-tea.onrender.com/admin/logout', {
       method: 'POST',
       headers: {
         "Content-Type": "application/json",
